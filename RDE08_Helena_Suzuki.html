@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML</title>
+</head>
+<body>
+    <style>
+        h4{
+        color: #316ee0;
+        font-family: "zillaslab","palatino","Palatino Linotype",serif;
+        font-family: "Segoe UI",Arial,sans-serif;
+        font-size:20px;
+        margin-left: 200px ;
+        }
+        h1{
+            
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: 50px;
+            margin-left: 200px ;
+            font-size:30px;
+            
+        }
+        p {
+            font-family: sans-serif;
+            margin-left: 200px ;
+            padding-right: 200px;
+            margin-bottom: 2px;
+        } 
+        img {
+            margin-left: 200px ;
+        }      
+        h2{
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: 200px;
+            font-size:35px;
+            margin-left: 200px ;
+        }
+        li {
+            font-family: sans-serif;
+            margin-left: 200px ;
+            padding-right: 200px;
+        } 
+        table {
+            margin-left: 200px ;
+        }
+
+    </style>
+    <p>
+       <h2>Tags HTML</h2>
+    </p>
+    <p>A seguir, veremos algumas tags importantes para o HTML.</p>
+    <h4>Índice</h4>
+    <p><ul>
+        <p><li><a href="#table">table</a></li>
+        <li><a href="#del">del</a></li>
+        <li><a href="#ins">ins</a></li>
+        <li><a href="#sub">sub</a></li>
+        <li><a href="#sup">sup</a></li>
+        <li><a href="#blockquote">blockquote</a></li>
+        <li><a href="#q">q</a></li>
+        <li><a href="#abbr">abbr</a></li>
+        <li><a href="#adress">address</a></li>
+        <li><a href="#cite">cite</a></li>
+        <li><a href="#bdo">bdo</a></li>
+        <li><a href="#code">code</a></li>
+        <li><a href="#pre">pre</a></li>
+        <li><a href="#kbd">kbd</a></li></p>
+    </ul></p>
+    <h1 id="table">&lttable&gt</h1>
+        <p>Possibitila a organização de dados em linhas, colunas e células, ou seja, essa tag serve para criar uma tabela no HTML.</p>
+        <h4>Tags complementares</h4>
+            <p>Além da tag &lttable&gt, é necessária a utilização de algumas outras para criar uma tabela completa.</p>
+            <p><b><font color=darkred>&lttr&gt</font>:</b> Determina o início e o fim de uma linha da tabela.</p>
+            <p><b><font color=darkred>&lttd&gt</font>:</b> Define o conteúdo que estará dentro de cada célula.</p>
+            <p><b><font color=darkred>&ltth&gt</font>:</b> Define o cabeçalho da tabela.</p>
+
+        <h4>Atributos</h4>
+            <p>Os atributos de tabelas geralmente são empregados no CSS, mas serão apresentado alguns básicos que podem ser utilizados no próprio HTML.</p>
+            <p><b><font color=darkred>border</font>: Define a largura da borda.</b></p>
+            <p><b><font color=darkred>cellspacing</font>: Define a distância entre as células da tabela.</b></p>    
+            <p><b><font color=darkred>cellpadding</font>: Define a distância entre a “borda” da célula até o seu conteúdo.</b>
+
+        <h4>Exemplo</h4>        
+                <img src="table.PNG">
+        <p><b>Código implementado:</b></p> <br>       
+        <table border=4px; cellspacing=1px; cellpadding=4px;>
+            <tr>
+              <th>Nome</th>
+              <th>Escola</th>
+            </tr>
+            <tr>
+              <td>Carlos Ribeiro</td>
+              <td>Xavier</td>
+            </tr>
+            <tr>
+              <td>Bianca Dias</td>
+              <td>IFPR</td>
+            </tr>
+          </table>
+
+    <!--<table border="2" cellspacing="10" cellpadding="10">
+        <tr>
+         <th>Nome</th>
+         <th>Endereço</th>
+         <th>Telefone</th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="3">Juquinha</td>
+            <td > Rua ABC </td>
+            <td>42 9999999</td> 
+        </tr>
+        <tr>
+            <td>Zezinho</td>
+            <td>Rua DYQ</td>
+            <td>43 99288348384</td>
+        </tr> 
+     </table> -->
+
+    <h1 id="del">&ltdel&gt</h1>
+            <p>Representa uma parte do texto que foi excluída de um documento. Esse fragmento é, geralmente, renderizado pelos navegadores com uma linha "cortando" o texto.</p>
+
+            <h4>Exemplo</h4>
+                    <img src="del.PNG">
+                    <p><b>Código implementado:</b></p>
+                    <p><p><del>This text has been deleted</del></p></p>
+
+    <h1 id="ins">&ltins&gt</h1>    
+            <p>É utilizado para quando um texto foi inserido ao documento.</p>
+            <h4>Exemplo:</h4>
+
+            <img src="ins.PNG">
+
+            <p><b>Código implementado:</b></p>
+
+            <p><ins>Esse texto foi adicionado.</ins></p>
+
+    <h1 id="sub">&ltsub&gt</h1>     
+            <p>Essa tag determina que o texto que esteja embutido nela fique subscrito ao restante. Nesse sentido, ele usualmente ficará numa linha de base um pouco mais baixa e com uma fonte menor. Ela pode ser utilizada para notas de rodapé, fórmulas químicas e subscritos de variável.</p>   
+            
+            <h4>Exemplo</h4>
+                    <img src="sub.PNG">
+                    <p><b>Código implementado:</b></p>
+                    <p>A fórmula molecular da glicose é C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>.</p>
+            
+    <h1 id="sup">&ltsup&gt</h1>
+            <p>Ao utilizar essa tag, o texto embutido nela ficará sobrescrito ao restante. Sendo assim, ele geralmente aparecerá em uma linha de base um pouco acima e com uma fonte menor. Essa tag é comemunte utilizada para números expoentes, mas também poder ser usada para letras.
+            </p>
+
+            <h4>Exemplo</h4>
+                    <img src="sup.PNG">
+            <p><b>Código implementado:</b></p>
+
+            <p>2<sup>2</sup>=4</p>
+
+    <h1 id="blockquote">&ltblockquote&gt</h1>
+            <p>
+                A tag indica que o texto incluído é uma longa citação. Usualmente, é apresentado como um recuo no texto. A URL para a fonte da citação pode ser dada usando o <b>atributo <font color=darkred>cite</font></b>, enquanto uma representação de texto da fonte pode ser dada usando a tag  <b>&ltcite&gt</b> elemento.
+            </p>
+            <h4>Exemplo</h4>
+                    
+                        <img src="blockquote.PNG">
+                      <p>  <b>Código implementado:</b>  </p>
+                        <blockquote cite="http://developer.mozilla.org">
+                            <p>Esta é uma citação tirada da
+                            Mozilla Developer Center.</p>
+                        </blockquote>
+                   
+    <h1 id="q">&ltq&gt</h1>
+            <p>O elemento HTML &ltq&gt indica que o texto dentro da tag é uma pequena citação. Este elemento destina-se a citações curtas que não requerem marcações de parágrafo.</p>
+            <h4>Atributos</h4>
+                    <p>
+                        Além de incluir os atributos globais, ele possui o <b><font color=darkred>cite</font></b>, que tem como valor um URL, o qual encaminhará para a fonte da informação citada.
+                    </p>
+            <h4>Exemplo</h4>
+                    <img src="q.PNG" >
+
+                    <p>Para mais informações clique <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q">aqui</a>. </p>
+
+    <h1 id="abbr">&ltabbr&gt</h1>        
+            <p>
+                Essa tag irá representar uma abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o <b>atributo <font color=darkred>title</font></b> deve conter a descrição completa.
+            </p>
+            <p>
+
+            </p>
+            <h4>Exemplo</h4>
+                <img src="abbr.PNG">
+                <p><b>Código implementado:</b></p>
+                <p>Obama é presidente dos <abbr title="Estados Unidos da América">EUA</abbr>.
+            </p>
+
+    <h1 id="address">&ltaddress&gt</h1> 
+    <p>Ela fornece informações de contato para seu ancestral &ltarticle&gt ou &ltbody&gt mais próximo; no segundo caso, ele se aplica ao documento inteiro.</p>   
+        
+        <h4>Exemplo</h4>
+        <p>O seguinte conteúdo está expresso entre as tags "address":</p>
+        <p>
+                <address>
+                <p>Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+                Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.
+               Você tambem pode querer nos visitar:<br>
+                Mozilla Foundation<br>
+                1981 Landings Drive<br>
+                Building K<br>
+                Mountain View, CA 94043-0801<br>
+                USA</p> 
+              </address>
+            <p>Além de sua função semântica, ele deixa o texto como se esse estivesse entre  &lti&gt.</p>
+        </p>
+
+    <h1 id="cite">&ltcite&gt</h1>   
+    <p>
+        O elemento HTML &ltcite&gt representa uma referência a um trabalho artístico. Deve incluir o título do trabalho ou uma URL de referência, que pode ser em uma forma abreviada de acordo com as convenções usadas para a adição dos metadados de citação.
+    </p> 
+    <h4>Exemplo</h4>
+        <img src="cite.PNG">
+        <p><b>Código implementado:</b></p>
+        <p> Mais informações podem ser encontradas em <cite>[ISO-0000]</cite>.</p>
+
+     <h1 id="bdo">&ltbdo&gt</h1>   
+     <p>O elemento HTML &ltbdo&gt (bidirectional override) é utilizado para substituir a direcionalidade atual do texto. Isso fará com que a direção do texto se torne aquela que foi especificada no código.</p>
+
+     <h4>Atributos</h4>
+     <p><b><font color=darkred>dir</font></b> indicará a direção do texto. Os seus valores possíveis são:</p>
+     <p>
+         <b>ltr: </b> com esse, o texto ficará da esquerda para a direita (Left-To-Right), como o usual.<br>
+         <b>rtl: </b> o texto ficará da direita para a esquerda (Right-To-Left).
+     </p>
+     <h4>Exemplo</h4>
+     <img src="bdo.PNG">
+     <b><p>Código implementado:</p></b>
+     <p>
+            <p>Este texto ficará da esquerda para a direita.</p>
+            <p><bdo dir="rtl">Este texto ficará da direita para a esquerda.</bdo></p>
+
+     </p>
+
+
+
+     <h1 id="code">&ltcode&gt</h1>
+     <p>Essa tag define um fragmento de código de computador no documento HTML. Os navegadores tradicionalmente renderizam o texto encontrado na tag &ltcode&gt em fonte monoespaçada.</p>
+   
+    <h4>Exemplo</h4>
+    <img src="code.PNG">
+    <p><b>Código implementado:</b></p>
+    <p><code>Computer code goes here</code></p>
+
+    <h1 id="pre">&ltpre&gt</h1>
+    <p>HTML <i>texto preformatado &ltpre&gt</i>  é a tag utilizada para representar um texto pré-formatado. O texto dentro desse elemento é exibido da mesma maneira em que o texto original. Ele geralmente fica desproporcional ao restante do conteúdo e os  espaços em branco são mantidos no texto, assim como ele foi digitado. </p>
+
+    <h4>Exemplo</h4>
+    <img src="pre.PNG">
+
+    <h1>&ltkbd&gt</h1>
+            <p>O elemento HTML representa uma extensão de texto embutido denotando a entrada textual do usuário a partir de um teclado, entrada de voz ou qualquer outro dispositivo de entrada de texto. Por convenção, o padrão do agente do usuário é renderizar o conteúdo de um elemento usando sua fonte monoespaçada padrão, embora isso não seja obrigatório, pois pode ser estilizado com CSS.</p>
+            <h4>Exemplo</h4>
+                    <img src="kbd.PNG">
+
+                    <b><p>Código implementado:</p></b>
+
+                    <p>Para copiar algum elemento, digite <kbd>ctrl + c</kbd>, e para colá-lo, <kbd>ctrl + v</kbd>.</p>
+</body>
+</html>
